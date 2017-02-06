@@ -1,0 +1,356 @@
+
+html {
+	position: relative;
+	min-width: 70%;
+	min-height: 1100px;
+
+}
+
+body {
+	background-image:url(../images/cork-wallet.png);
+	font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+	color: #777;
+	
+}
+
+/*Font Styles*/
+
+h1, h2, h3 {
+	font-family:'Georgia', Times, Times New Roman, serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.outer_container {
+	height:auto;
+	
+}
+
+/*Header*/
+
+header {
+	background-color: #fff;
+	height: 100px;
+	border-bottom: 3px solid #ccc;
+	margin-bottom: 30px;
+}
+
+.header_content {
+	width: 960px;
+	margin: auto;	
+}
+
+.logo {
+	background-color:#4aaaa5;
+	color: #777;
+	float:left;
+	height:100px;
+	padding: 0 20px;
+	text-align:center;
+	color: #fff;
+	font-weight:bold;
+	line-height: 100px;
+}
+
+.navigation {
+	line-height: 100px;
+	font-weight:bold;
+	float:right;
+	color: #777;
+}
+
+.navigation a:link {
+	text-decoration: none;
+	
+}
+
+.navigation a:visited {
+	color: #777;
+}
+
+.navigation a:hover {
+	color: orange;
+}
+
+.navigation a:active {
+	color: #4aaaa5;
+}
+
+.navigation li {
+	float:left;
+	
+}
+
+.navigation li a {
+	display: block;
+	width: auto;
+	padding-left: 20px;
+}
+
+/*Page Content Styles*/
+
+.page_content {
+	width: 960px;
+	margin: auto;
+	min-height: 100%;
+}
+
+.main {
+	width: 610px;
+	background-color: #fff;
+	float:left;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.main h1 {
+	color: #4aaaa5;
+	font-weight: bold;
+}
+
+/*Page Heading Styles*/
+
+#about, #portfolio, #contact {
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+	height: 50px;
+	width:610px;
+	line-height:50px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+/*About Page*/
+
+#profile_pic {
+	max-width: 200px;
+	float: left;
+	padding-right: 20px;
+	padding-top: 30px;
+}
+
+.main p {
+	margin-top: 20px;
+	line-height: 2em;
+}
+
+.main p a {
+	text-decoration: none;
+}
+
+/*Portfolio Project Thumbnails*/
+
+#project_1, #project_3, #project_5 {
+	float:left;
+	max-width: 290px;
+	padding-top: 20px;
+	position: relative;
+}
+
+#project_2, #project_4 {
+	float:right;
+	max-width: 290px;
+	padding-top: 20px;
+}
+
+#img_container_1, #img_container_3, #img_container_5 {
+	position:relative;
+	max-width:290px;
+	float: left;	
+}
+
+#img_container_2, #img_container_4 {
+	position:relative;
+	max-width:290px;
+	float: right;	
+}
+
+
+#banner_1 {
+	position:absolute;
+	bottom:10px;
+	height:60px;
+	width:290px;
+	background-color: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	line-height:60px;
+}
+
+/*Contact Form*/
+
+#contact_form {
+	margin-top: 20px;
+	line-height: 1.3em;
+	font-weight: bold;
+	color:#777;
+}
+
+#name_input, #email_input, #text_area {
+	width: 606px;
+}
+
+#submit_btn {
+	width: 100px;
+	height: 40px;
+	font-weight:bold;
+	font-size:1em;
+	color: #fff;
+	border: 0px;
+	background-color: #4aaaa5;
+	margin-top: 10px;
+}
+
+/*Sidebar*/
+
+.sidebar {
+	width: 230px;
+	padding:20px;
+	background-color: #fff;	
+	float:right;
+
+}
+
+.sidebar h2 {
+	font-size:1.5em;
+	color: #4aaaa5;
+	font-weight:bold;
+	text-align: left;
+}
+
+#connect {
+	width: 230px;
+	padding-bottom:20px;
+	border-bottom: 2px solid #ccc;
+}
+
+.sidebar img {
+	max-width: 60px;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+.sidebar #github {
+	float: left;
+}
+
+.sidebar #linkedin {
+	float:left;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.sidebar #stackoverflow {
+	float:right;
+}
+
+
+/*Footer*/
+
+footer {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	border-top: 5px solid #4aaaa5;
+	height:100px;
+	background-color:#666;
+	clear: both;
+	text-align: center;
+	line-height: 100px;	
+}
+
+@media (max-width: 980px) {
+
+	html {
+		min-height: 2000px;
+	}
+
+   .header_content {
+   	width: 700px;
+   }
+
+   .page_content {
+   	width: 700px;
+   }
+
+   .main {
+   	width: 400px;
+
+   }
+
+   #about, #portfolio, #contact {
+   	width: 400px;
+   	
+   }
+
+   #profile_pic {
+   	max-width: 400px;
+	padding-right: 0px;
+	margin-bottom:20px;
+   }
+
+   /*Sidebar*/
+
+   .sidebar {
+   	width: 180px;
+   }
+
+   .sidebar h2 {
+   	font-size: 1.2em;
+   }
+
+   #connect {
+   	width:180px;
+   	padding-bottom:10px;
+   }
+
+   .sidebar img {
+   	max-width: 50px;
+   	margin-bottom:20px;
+   }
+
+   .sidebar #linkedin {
+   	padding-left: 15px;
+   	padding-right:15px;
+   }
+
+   /*Portfolio Thumbnail Area*/
+	
+	#project_1, #project_2, #project_3, #project_4, #project_5 {
+	max-width: 400px;
+	}
+
+	#img_container_1, #img_container_2, #img_container_3, #img_container_4, #img_container_5 {
+	max-width: 400px;
+	}
+
+	#banner_1, #banner_2, #banner_3, #banner_4, #banner_5 {
+	width: 400px;
+	}
+
+	/*Contact Form*/
+
+	#name_input, #email_input, #text_area {
+	width: 400px;
+}
+
+
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 640px) {
+   
+}
