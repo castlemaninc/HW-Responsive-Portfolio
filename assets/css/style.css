@@ -31,10 +31,10 @@ strong {
 	font-weight: bold;
 }
 
-.outer_container {
+/*.outer_container {
 	height:auto;
 	
-}
+}*/
 
 /*Header*/
 
@@ -348,7 +348,93 @@ footer {
 }
 
 @media (max-width: 768px) {
-   
+
+	html {
+		min-height: 1300px;
+	}
+
+	h1 {
+		font-size: 1.7em;
+	}
+	
+   .header_content {
+   	width: 640px;
+   }
+
+   .page_content {
+   	width: 640px;
+   }
+
+   #about, #portfolio, #contact, #connect {
+   	width: 600px;   	
+   }
+
+   .main {
+   	width: 600px;   	
+   }
+
+   #profile_pic {
+	max-width: 200px;
+	float: left;
+	padding-right: 20px;
+	padding-top: 30px;
+	}
+
+	.main p {
+	line-height: 1.5em;
+	}
+
+   .sidebar {
+   	float: left;
+   	width: 600px;   	
+   }
+
+   .sidebar #stackoverflow {
+   	float: left;
+   }
+
+   /*Portfolio Thumbnail Images*/
+
+   #project_1, #project_3, #project_5 {
+	float:left;
+	max-width: 290px;
+	padding-top: 20px;
+	position: relative;
+}
+
+#project_2, #project_4 {
+	float:right;
+	max-width: 290px;
+	padding-top: 20px;
+}
+
+#img_container_1, #img_container_3, #img_container_5 {
+	position:relative;
+	max-width:290px;
+	float: left;	
+}
+
+#img_container_2, #img_container_4 {
+	position:relative;
+	max-width:290px;
+	float: right;	
+}
+
+#banner_1 {
+	position:absolute;
+	bottom:10px;
+	height:60px;
+	width:290px;
+	background-color: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	line-height:60px;
+}
+
+#name_input, #email_input, #text_area {
+	width: 600px;
+}
+
 }
 
 @media (max-width: 640px) {
